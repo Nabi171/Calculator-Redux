@@ -2,11 +2,19 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './component/Header/Header';
 import CalcualtorApp from './component/CalcualtorApp/CalcualtorApp';
+import { store } from './component/redux/store';
+import { Provider } from 'react-redux';
+
 function App() {
+
   return (
     <div className="container">
       <Header></Header>
-      <CalcualtorApp></CalcualtorApp>
+      <Provider store={store}>
+        <CalcualtorApp></CalcualtorApp>
+      </Provider>
+
+
     </div>
   );
 }
