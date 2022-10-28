@@ -1,5 +1,5 @@
 import { LOAD_ANS, LOAD_CLEAR, LOAD_BUTTONS, LOAD_BACKSPACE } from '../calculatorRedux/calculator.actionType.js';
-import { number } from 'prop-types';
+
 
 
 export const LoadButtons = (number) => {
